@@ -1,9 +1,7 @@
-n = 9
-x = '□'
-y = '○'
-for i in range(n):
-    for j in range(i):
-        print(y, end='')
-    for j in range(n-i):
-        print(x, end='')
-    print(' ')
+data = [['a', 'b', 'c'] for _ in range(50)]
+
+print('初期化時のデータ:', data)
+
+data[3][1] = 'CHG'
+
+print('変更後のデータ:', data)
