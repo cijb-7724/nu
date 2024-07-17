@@ -41,7 +41,7 @@ function backward_substitution(A) {
 
 /*　forward_elimination関数も以前の演習の内容を埋める
  　　forward_elimination関数の内部で使った行基本変形の関数も追加する*/
- function forward_elimination(A, flag) {
+function forward_elimination(A, flag) {
     for (var i = 0; i < A.length - 1; i++) {
         for (var j = i + 1; j < A.length; j++) {
             row_transformation(A, i, j, -A[j][i] / A[i][i]);
